@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSV Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div id="app" class="mx-auto align-self-center">
+      <div id="title-text">CSV Generator</div>
+      <div class="container">
+          <div class="row">
+              <div class="col">Input JSON Here</div>
+              <div class="col">Output will appear here</div>
+            </div>
+        <div class="row">
+          <div id="input-field" class="col"><input id="file-input" type="file" accept=".json"/><textarea id="input-json" type="textarea" rows="10" cols="50" class="form-control"></textarea></div>
+          <div id="response-display" class="col"><p id="csv"></p></div>
+        </div>
+      </div>  
+      <div id="button-container" class="mx-auto"><button id="submit" type="button" class="btn btn-outline-primary btn-lg">Convert</button></div>
+      <div>
+        History
+        <ul id="history">
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
